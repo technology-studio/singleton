@@ -8,7 +8,7 @@ const singletonMap: Record<string, unknown> = {}
 
 export const withSingleton = <VALUE>(key: string, init: () => VALUE): VALUE => {
   let value = singletonMap[key]
-  if (!value) {
+  if (value == null) {
     value = init()
   }
   return value as VALUE
