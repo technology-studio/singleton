@@ -6,10 +6,14 @@
 
 const singletonMap: Record<string, unknown> = {}
 
-export const withSingleton = <VALUE>(key: string, init: () => VALUE): VALUE => {
-  let value = singletonMap[key]
-  if (value == null) {
-    value = init()
-  }
-  return value as VALUE
-}
+export const withSingleton = <VALUE>(key: string, init: () => VALUE): { getValue: () => VALUE, setValue: (value: VALUE) => void } => ({
+    getValue: () => {
+      if (!(key in singletonMap)) {
+        singletonMap[key] = init()
+      }
+      return singletonMap[key] as VALUE
+    },
+    setValue: (value: VALUE) => {
+      singletonMap[key] = value
+    },
+  })
