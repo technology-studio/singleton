@@ -1,6 +1,6 @@
 {
   "name": "@txo-peer-dep/singleton",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Technology Studio - Singleton",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
