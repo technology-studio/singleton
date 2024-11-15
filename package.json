@@ -1,6 +1,6 @@
 {
   "name": "@txo-peer-dep/singleton",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Technology Studio - Singleton",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -41,19 +41,19 @@
   "dependencies": {},
   "devDependencies": {
     "@txo-peer-dep/log": "^4.0.4",
-    "@txo/commitlint": "^1.0.17",
+    "@txo/commitlint": "^1.0.19",
     "@txo/log-console": "^3.0.0",
     "@txo/semantic-release": "^2.0.8",
     "@txo/tsconfig": "^1.1.1",
-    "@types/jest": "^29.5.12",
-    "concurrently": "^9.0.0",
-    "eslint-config-txo-typescript": "^4.0.66",
-    "husky": "^9.1.5",
+    "@types/jest": "^29.5.14",
+    "concurrently": "^9.1.0",
+    "eslint-config-txo-typescript": "^4.0.70",
+    "husky": "^9.1.6",
     "jest": "^29.7.0",
     "lint-staged": "^15.2.10",
-    "npm-check-updates": "^17.1.1",
+    "npm-check-updates": "^17.1.11",
     "rimraf": "^6.0.1",
     "ts-jest": "^29.2.5",
-    "typescript": "^5.5.4"
+    "typescript": "^5.6.3"
   }
 }

@@ -1,6 +1,6 @@
 const txoConfig = require('eslint-config-txo-typescript')
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
+/** @type {import('eslint').Linter.Config[]} */
 const config = [
   ...txoConfig.default,
 ]
