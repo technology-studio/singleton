@@ -4,9 +4,9 @@
  * @Copyright: Technology Studio
  */
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type -- we are already overriding the return type
 const getSingletonFunction = <VALUE>() => (
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports, @typescript-eslint/no-unsafe-type-assertion -- we need to dynamically import the module and cast its type
   require('@txo-peer-dep/singleton') as unknown as { withSingleton: (key: string, init: () => VALUE) => {
     getValue: () => VALUE,
     setValue: (value: VALUE) => void,
